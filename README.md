@@ -1,5 +1,5 @@
 # Getting Started with Create React App
-
+<h1>This is a simple to-do app in React based on useSate and array methods</h1>
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
