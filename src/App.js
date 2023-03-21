@@ -17,6 +17,7 @@ function App() {
       setVal(task);
     }
   }
+  
 const handleClick = () => {
 
   if(val.name === '') {
@@ -26,6 +27,7 @@ const handleClick = () => {
       if(e.id === val.id) {
         e.name = val.name;
       }
+      return e;
     });
   } else {
     let length = listItem.length;
@@ -53,7 +55,7 @@ const editItem = (e)=> {
         <button onClick={handleClick}>{val.id?'Replace':'Add'}</button>
       </div>
       <div>
-        {listItem.map((e,index)=> {
+        {listItem.map((e)=> {
           return <div key={e.id}>
                     <h1>{e.name}</h1>
                     <button onClick={()=> deleteItem(e)}>Delete</button>
